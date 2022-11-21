@@ -1,17 +1,5 @@
 const { validationResult } = require("express-validator");
 const { formatResponse } = require("./response");
-const multer = require("multer");
-
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        cb(null, "images");
-    },
-    filename: (req, file, cb) => {
-        cb(null, Date.now() + file.originalname);
-    },
-});
-
-const upload = multer({ storage: storage });
 
 const errorsValidation = (req, res, next) => {
     const errors = validationResult(req);
@@ -22,6 +10,5 @@ const errorsValidation = (req, res, next) => {
 };
 
 module.exports = {
-    upload,
     errorsValidation,
 };
