@@ -51,7 +51,8 @@ app.use("/colors", colorRoute);
 app.use("/sizes", sizeRoute);
 app.use("/categories", categoryRoute);
 app.use("/warehouse", warehouseRoute);
+const PORT = process.env.PORT || 5000;
 
-app.listen("5000", () => {
+app.listen("PORT", () => {
     console.log("Backend is running.");
 });
