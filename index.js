@@ -7,7 +7,6 @@ const productRoute = require("./routes/products");
 const cartRoute = require("./routes/cart");
 const orderRoute = require("./routes/orders");
 const roleRoute = require("./routes/roles");
-const sizeRoute = require("./routes/sizes");
 const colorRoute = require("./routes/colors");
 const categoryRoute = require("./routes/category");
 const warehouseRoute = require("./routes/warehouse");
