@@ -40,15 +40,15 @@ app.use(passport.session());
 db.connect();
 
 app.use("/images", express.static(path.join(__dirname, "/images")));
-app.use("/auth", authRoute);
-app.use("/users", userRoute);
-app.use("/products", productRoute);
-app.use("/cart", cartRoute);
-app.use("/orders", orderRoute);
-app.use("/roles", roleRoute);
-app.use("/colors", colorRoute);
-app.use("/categories", categoryRoute);
-app.use("/warehouse", warehouseRoute);
+app.use("/api/auth", authRoute);
+app.use("/api/users", userRoute);
+app.use("/api/products", productRoute);
+app.use("/api/cart", cartRoute);
+app.use("/api/orders", orderRoute);
+app.use("/api/roles", roleRoute);
+app.use("/api/colors", colorRoute);
+app.use("/api/categories", categoryRoute);
+app.use("/api/warehouse", warehouseRoute);
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
