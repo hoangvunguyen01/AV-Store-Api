@@ -53,6 +53,6 @@ app.use("/categories", categoryRoute);
 app.use("/warehouse", warehouseRoute);
 const PORT = process.env.PORT || 5000;
 
-app.listen("PORT", () => {
+app.listen(PORT, () => {
     console.log("Backend is running.");
 });
