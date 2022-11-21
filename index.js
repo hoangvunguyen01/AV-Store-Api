@@ -47,7 +47,6 @@ app.use("/cart", cartRoute);
 app.use("/orders", orderRoute);
 app.use("/roles", roleRoute);
 app.use("/colors", colorRoute);
-app.use("/sizes", sizeRoute);
 app.use("/categories", categoryRoute);
 app.use("/warehouse", warehouseRoute);
 const PORT = process.env.PORT || 5000;
