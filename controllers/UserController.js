@@ -57,7 +57,7 @@ class UserController {
                                 html: `
                             <h2>Xác minh địa chỉ email để hoàn thành việc đăng ký tài khoản và đăng nhập vào tài khoản của bạn.</h2>
                             <p>Đường link có <b>thời hạn là 6 tiếng.</b></p>
-                            <a href="http://localhost:3000/confirm-account/${token}" target="_blank">Click here</a>       
+                            <a href="https://av-store.herokuapp.com/confirm-account/${token}" target="_blank">Click here</a>       
                             `,
                             };
 
@@ -191,7 +191,7 @@ class UserController {
                 html: `
             <h2>Xác minh địa chỉ email để hoàn thành việc đăng ký tài khoản và đăng nhập vào tài khoản của bạn.</h2>
             <p>Đường link có <b>thời hạn là 6 tiếng.</b></p>
-            <a href="http://localhost:3000/confirm-account/${token}" target="_blank">Click here</a>       
+            <a href="https://av-store.herokuapp.com/confirm-account/${token}" target="_blank">Click here</a>       
             `,
             };
 
